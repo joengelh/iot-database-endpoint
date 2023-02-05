@@ -2,9 +2,9 @@
 
 from fastapi import FastAPI
 
-from app import models
-from app.database import engine
-from app.routers.data import post
+from src import models
+from src.database import engine
+from src.routers.data import post
 
 models.Base.metadata.create_all(bind=engine)
 

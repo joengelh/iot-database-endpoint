@@ -2,8 +2,8 @@
 
 from fastapi.testclient import TestClient
 
-from app.main import app, engine
-from app.models import Base
+from src.main import app, engine
+from src.models import Base
 
 client = TestClient(app)
 

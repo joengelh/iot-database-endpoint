@@ -3,7 +3,7 @@
 from fastapi import HTTPException
 from sqlalchemy.orm import Session
 import uuid
-from app import schemas, models
+from src import schemas, models
 
 def saveDataToDb(db: Session, data: schemas.Data):
     entryUuid = uuid.uuid4()

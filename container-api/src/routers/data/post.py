@@ -3,10 +3,10 @@
 from fastapi import Depends, APIRouter
 from sqlalchemy.orm import Session
 
-router = APIRouter()
+from src import crud, schemas
+from src.dependencies import get_db
 
-from app import crud, schemas
-from app.dependencies import get_db
+router = APIRouter()
 
 @router.post("/api/v1/data")
 async def signup(data: schemas.Data, db: Session = Depends(get_db)) -> str:
