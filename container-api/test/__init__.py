@@ -14,6 +14,6 @@ sys.path.append(SOURCE_PATH)
 os.environ["POSTGRES_NAME"] = "postgres"
 os.environ["POSTGRES_USER"] = "postgres"
 os.environ["POSTGRES_PASSWORD"] = "3910287467803549ASD318112312SADF"
-os.environ["POSTGRES_HOST"] = "139.177.176.156"
-os.environ["POSTGRES_PORT"] = "13300"
+os.environ["POSTGRES_HOST"] = "159.69.213.123"
+os.environ["POSTGRES_PORT"] = "9999"
 

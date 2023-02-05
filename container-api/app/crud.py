@@ -8,7 +8,7 @@ from app import schemas, models
 def saveDataToDb(db: Session, data: schemas.Data):
     entryUuid = uuid.uuid4()
     db.add(models.Data(
-        uuit=entryUuid
+        uuid=entryUuid,
         float1=data.float1,
         float2=data.float2,
         float3=data.float3,
