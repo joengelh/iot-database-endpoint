@@ -1,0 +1,12 @@
+fastapi
+envs
+python-dateutil
+uwsgi
+gevent
+gunicorn
+psycopg2-binary
+requests
+typing
+ciso8601
+sqlalchemy
+sqlalchemy-utils
