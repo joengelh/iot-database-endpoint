@@ -3,10 +3,5 @@
         "appName": "api",
         "appDomain": "api.profitablestaking.com",
         "appEndpoint": "http://api"
-    },
-    {
-        "appName": "db",
-        "appDomain": "db.profitablestaking.com",
-        "appEndpoint": "http://db:5432"
     }
 ]

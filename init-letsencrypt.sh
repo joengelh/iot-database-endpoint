@@ -2,6 +2,8 @@
 
 ### Excute this script once and ONLY once when initializing a new server
 ### For each domain, change/update `domains` value below and excute this script.
+### Also, only create and load the configs just for one server at a time, because NGINX
+### otherwise fails with the certificates not found
 
 if ! [ -x "$(command -v docker-compose)" ]; then
   echo 'Error: docker-compose is not installed.' >&2
@@ -10,7 +12,6 @@ fi
 
 domains=(
   api.profitablestaking.com
-  #db.profitablestaking.com
 )
 
 rsa_key_size=4096

@@ -3,8 +3,6 @@ services:
   api:
    build: ./container-api/
    restart: always
-   ports: 
-   - 10000:80
    env_file:
    - .env
    depends_on:
