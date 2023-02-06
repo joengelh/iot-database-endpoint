@@ -6,7 +6,7 @@ import sys
 #add project path
 PROJECT_PATH = os.getcwd()
 SOURCE_PATH = os.path.join(
-    PROJECT_PATH,"app/"
+    PROJECT_PATH,"src/"
 )
 sys.path.append(SOURCE_PATH)
 

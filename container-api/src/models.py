@@ -3,11 +3,12 @@
 from sqlalchemy import DateTime, Column, Float, BigInteger, String, Boolean
 from sqlalchemy.sql import func
 
-from .database import Base
+from database import Base
 
 class Data(Base):
     __tablename__ = 'device1'
     uuid = Column(String, primary_key=True)
+    deviceId = Column(BigInteger)
     float1 = Column(Float)
     float2 = Column(Float)
     float3 = Column(Float)

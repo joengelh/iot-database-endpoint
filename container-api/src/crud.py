@@ -2,13 +2,12 @@
 
 from fastapi import HTTPException
 from sqlalchemy.orm import Session
-import uuid
-from src import schemas, models
+import schemas, models
 
-def saveDataToDb(db: Session, data: schemas.Data):
-    entryUuid = uuid.uuid4()
+def saveDataToDb(db: Session, data: schemas.Data, dataUuid: str):
     db.add(models.Data(
-        uuid=entryUuid,
+        uuid=dataUuid,
+        deviceId=data.deviceId,
         float1=data.float1,
         float2=data.float2,
         float3=data.float3,
@@ -19,4 +18,4 @@ def saveDataToDb(db: Session, data: schemas.Data):
     except:
         db.rollback()
         raise HTTPException(status_code=500, detail="Database Error")
-    return entryUuid
+    return dataUuid
