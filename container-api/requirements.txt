@@ -1,7 +1,7 @@
 fastapi
 uvicorn
 sqlalchemy<2.0
-psycopg2
+psycopg2-binary
 pydantic
 redis
 envs
@@ -18,3 +18,4 @@ ciso8601
 web3
 python-multipart
 sendgrid
+httpx

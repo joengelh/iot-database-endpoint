@@ -1,0 +1,12 @@
+[
+    {
+        "appName": "api",
+        "appDomain": "api.blockchain-garage.de",
+        "appEndpoint": "http://api"
+    },
+    {
+        "appName": "db",
+        "appDomain": "db.blockchain-garage.de",
+        "appEndpoint": "db:5432"
+    }
+]
