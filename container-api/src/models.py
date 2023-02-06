@@ -6,9 +6,9 @@ from sqlalchemy.sql import func
 from database import Base
 
 class Data(Base):
-    __tablename__ = 'device1'
+    __tablename__ = 'data'
     uuid = Column(String, primary_key=True)
-    deviceId = Column(BigInteger)
+    deviceId = Column(String)
     float1 = Column(Float)
     float2 = Column(Float)
     float3 = Column(Float)

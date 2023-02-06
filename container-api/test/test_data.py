@@ -9,10 +9,10 @@ client = TestClient(app)
 
 #test signup
 def test_auth():
-    Base.metadata.drop_all(bind=engine)
+    #Base.metadata.drop_all(bind=engine)
     Base.metadata.create_all(bind=engine)
     response = client.post("/api/v1/data", json={
-        "deviceId": 1231231,
+        "deviceId": "test",
         "float1": 0.0,
         "float2": 0.0,
         "float3": 0.0,

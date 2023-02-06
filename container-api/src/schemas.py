@@ -3,7 +3,7 @@
 from pydantic import BaseModel
 
 class Data(BaseModel):
-    deviceId: int
+    deviceId: str
     float1: float
     float2: float
     float3: float
