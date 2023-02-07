@@ -11,9 +11,6 @@ SOURCE_PATH = os.path.join(
 sys.path.append(SOURCE_PATH)
 
 #overwrite env vars to use the test db
-os.environ["POSTGRES_NAME"] = "postgres"
-os.environ["POSTGRES_USER"] = "postgres"
-os.environ["POSTGRES_PASSWORD"] = "3910287467803549ASD318112312SADF"
-os.environ["POSTGRES_HOST"] = "db.profitablestaking.com"
-os.environ["POSTGRES_PORT"] = "80"
+os.environ["POSTGRES_HOST"] = "20.251.9.84"
+os.environ["POSTGRES_PORT"] = "9999"
 

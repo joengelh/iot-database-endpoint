@@ -1,14 +1,14 @@
 #!/usr/local/bin/python3
 
-from sqlalchemy import DateTime, Column, Float, BigInteger, String, Boolean
+from sqlalchemy import DateTime, Column, Float, BigInteger, String
 from sqlalchemy.sql import func
 
 from database import Base
 
 class Data(Base):
     __tablename__ = 'data'
-    uuid = Column(String, primary_key=True)
-    deviceId = Column(String)
+    id = Column(BigInteger, primary_key=True)
+    device = Column(String)
     float1 = Column(Float)
     float2 = Column(Float)
     float3 = Column(Float)
