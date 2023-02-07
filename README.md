@@ -8,6 +8,10 @@ This is a general repository capable of spinning up a highly flexible endpoint f
 | ------ | -------------- | ------- |
 | `data` | `/api/v1/data` | `POST`  |
 
+## Swagger Documentation
+
+Once deployed, FastApi automatically renders a Swagger API documentation at **https://<your_domain>/docs** for developers to read.
+
 ## Configuration
 
 For the email Templates to render successfully, copy `logo/logo_green.png` to `/dat`so it can be loaded from the web.
@@ -30,6 +34,11 @@ The NGINX reverse proxy labelded **webserver** can be fed with configuration fil
 
 Whenever a new certificate file has to be generated due to a domain migration, the nginx config files have to modified accordingly and the script **init-letsencrypt.sh** has to be run.
 Only one service can be encrypted at a time. Thus, only one config file can be modified at a time aswell.
+
+## Security
+
+The API is protected with http BaseAuth, using the username **root** and a password.
+This ensures that only authorized IoT devices can post to the database.
 
 ## Deployment
 
