@@ -6,7 +6,7 @@ services:
    env_file:
    - .env
    ports:
-   - "9998:5432"
+   - "80:80"
    depends_on:
    - db
   db:
@@ -15,7 +15,7 @@ services:
    env_file:
    - .env
    ports:
-    - "9999:5432"
+    - "5432:5432"
    volumes:
    - /home/db/test:/var/lib/postgresql/data:rw
    - ./container-db/initdb.d:/docker-entrypoint-initdb.d
