@@ -51,7 +51,7 @@ docker-compose up -d --build
 If you want to run the application without docker-compose, the .env vars have to be set manually using the following command:
 
 ```bash
-export $(echo $(cat ../.env.test | sed 's/#.*//g' | sed 's/\r//g' | xargs) | envsubst)
+export $(echo $(cat ../.env | sed 's/#.*//g' | sed 's/\r//g' | xargs) | envsubst)
 ```
 
 ## Tests
