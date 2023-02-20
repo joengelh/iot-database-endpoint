@@ -1,0 +1,8 @@
+TVOC:
+
+1. SCL 5 (D1)
+2. SDA 4 (D2)
+
+HCHO:
+
+1. AOUT 0 (A0)
